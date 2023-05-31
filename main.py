@@ -61,7 +61,9 @@ def main():
     images_dir = Path(f'{current_directory}/images')
     raw_texts_dir = Path(f'{current_directory}/raw_texts')
     texts_dir = Path(f'{current_directory}/texts')
-    #srt_file = open(Path(f'{current_directory}/subtitle_output.srt'), 'a', encoding='utf-8')
+    srt_file = open(Path(f'{current_directory}/subtitle_output.srt'), 'a', encoding='utf-8')
+
+
     line = 1
 
     # check directory if exists
@@ -95,8 +97,8 @@ def main():
         if image == images2[-1]:
             for thread in threads:
                 thread.join()
-    #for i in sorted(srt_file_list):
-    #    srt_file.writelines(srt_file_list[i])
+    for i in sorted(srt_file_list):
+        srt_file.writelines(srt_file_list[i])
     srt_file.close()
 
 
