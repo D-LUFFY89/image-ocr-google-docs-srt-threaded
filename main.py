@@ -77,7 +77,7 @@ def main():
     if not texts_dir.exists():
         texts_dir.mkdir()
 
-    images = Path(f'{current_directory}/images').rglob('*.jpeg')
+    images = Path(f'{current_directory}/images').rglob('*.*')
     images2 = []
     threads = []
     for image in images:
