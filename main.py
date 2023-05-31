@@ -178,7 +178,7 @@ def ocr_image(image, line, credentials, current_directory):
             text_content = raw_text_file.read()
             raw_text_file.close()
             text_content = text_content.split('\n')
-            text_content = ''.join(text_content[2:])
+            text_content = '\n'.join(text_content[2:])
             text_file = open(txtfile, 'w', encoding='utf-8')
             text_file.write(text_content)
             text_file.close()
