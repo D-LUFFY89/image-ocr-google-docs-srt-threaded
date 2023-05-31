@@ -5,6 +5,7 @@
 * Install the Google Client Library using
 ```
 pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+pip install oauth2client
 ```
 * Export images using [VideoSubFinder](https://sourceforge.net/projects/videosubfinder/) and put them in images folder
 * Run main.py and login with google account (only for first time)
